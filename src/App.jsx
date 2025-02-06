@@ -3,6 +3,10 @@ import { ToastContainer } from "react-toastify";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Home from "./Pages/Home/Home";
+import Legal from "./Pages/Legal/Legal";
+import Policy from "./Pages/Policy/Policy";
+import Error404 from "./Pages/Error404/Error404";
+import Doctor from "./Pages/Doctor/Doctor";
 import Seo from "./Components/Seo/Seo";
 
 function App() {
