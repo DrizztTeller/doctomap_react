@@ -6,7 +6,10 @@ function CardProfile({ doctor }) {
     <NavLink to={`/docteur/${doctor.id}`} className="card-profile">
       <div className="card-content">
         <div className="profile-image">
-          <img src={doctor.image} alt={`${doctor.firstname} ${doctor.lastname}`} />
+          <img
+            src={doctor.image}
+            alt={`${doctor.firstname} ${doctor.lastname}`}
+          />
         </div>
         <div className="card-details">
           <h3>{`${doctor.firstname} ${doctor.lastname}`}</h3>
