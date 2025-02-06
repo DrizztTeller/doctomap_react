@@ -29,9 +29,10 @@ RESET
   --body: #faf9f6;
   --text: #333333;
 
-  --primaryBlue: #25a1b0;
-  --primaryBlueHover: #8dcbd3;
-  --secondaryBlue: #003853;
+  --primaryBlue: #007BFF;
+  --secondaryBlue: #004A80;
+  --primaryGreen: #28A745; 
+  --secondaryGreen: #34D399;
 }
 
 @media (prefers-color-scheme: dark) {
