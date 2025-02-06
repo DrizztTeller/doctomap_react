@@ -58,14 +58,14 @@ function Header() {
         <ul className="header__nav__ul">
           <li className="header__nav__ul__li">
             <NavLink
-              to="/docteurs"
-              aria-current={path === "/docteurs" ? "true" : undefined}
-              aria-label={`Aller à la page listant tous les docteurs`}
+              to="/rechercher"
+              aria-current={path === "/rechercher" ? "true" : undefined}
+              aria-label={`Aller à la page pour rechercher un docteur`}
               className={
-                "header__nav__ul__li__a " + (path === "/docteurs" && "active")
+                "header__nav__ul__li__a " + (path === "/rechercher" && "active")
               }
             >
-              Docteurs
+              Rechercher
             </NavLink>
           </li>
         </ul>

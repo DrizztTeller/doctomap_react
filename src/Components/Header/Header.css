@@ -34,11 +34,12 @@
         color: var(--white1);
         .header__nav__ul__li__a {
           padding: 1.2rem 0;
-          font-family: "Novecento", sans-serif;
           font-size: 2rem;
 
-          &.active,
           &:hover {
+            color: var(--primaryGreen) !important;
+          }
+          &.active {
             color: var(--secondaryGreen) !important;
           }
         }
@@ -199,6 +200,8 @@
             animation-timeline: scroll();
             animation-range-start: 200rem;
             animation-range-end: 260.5rem;
+            animation-range-start: 40rem;
+            animation-range-end: 80.5rem;
           }
 
           .header__nav__ul__li__a {
