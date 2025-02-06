@@ -68,6 +68,18 @@ function Header() {
               Rechercher
             </NavLink>
           </li>
+          <li className="header__nav__ul__li">
+            <NavLink
+              to="/ajouter"
+              aria-current={path === "/ajouter" ? "true" : undefined}
+              aria-label={`Aller à la page pour ajouter un docteur`}
+              className={
+                "header__nav__ul__li__a " + (path === "/ajouter" && "active")
+              }
+            >
+              Ajouter
+            </NavLink>
+          </li>
         </ul>
       </nav>
 

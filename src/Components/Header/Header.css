@@ -194,14 +194,16 @@
             animation-timeline: scroll();
             animation-range-start: 170rem;
             animation-range-end: 200.5rem;
+            animation-range-start: 10rem;
+            animation-range-end: 20.5rem;
           }
           &:first-of-type {
             animation: changeColor linear forwards;
             animation-timeline: scroll();
             animation-range-start: 200rem;
             animation-range-end: 260.5rem;
-            animation-range-start: 40rem;
-            animation-range-end: 80.5rem;
+            animation-range-start: 25rem;
+            animation-range-end: 35.5rem;
           }
 
           .header__nav__ul__li__a {
