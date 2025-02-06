@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./Search.css";
 import CardProfile from "../../Components/CardProfile/CardProfile";
+import { toast } from "react-toastify";
 
 const Search = () => {
   const [doctors, setDoctors] = useState([]);
