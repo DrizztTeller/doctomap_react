@@ -18,6 +18,7 @@
   width: 100%;
   max-width: 900px;
   overflow: hidden;
+  position: relative;
 }
 
 .doctor-image {
@@ -59,4 +60,16 @@
 
 .doctor-contact p strong {
   color: var(--secondaryGreen);
+}
+
+.update {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.delete-button {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
