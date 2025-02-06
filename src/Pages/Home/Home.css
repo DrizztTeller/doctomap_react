@@ -1,0 +1,21 @@
+#Home {
+display: grid;
+grid-template-columns: 1fr;
+  width: 100%;
+}
+
+@media only screen and /* (850px <= width < 1440px) */ (min-width: 850px) {
+  #Home {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3.2rem;
+    gap: 3.2rem;
+  }
+}
+
+/* media queries pour Desktop */
+@media only screen and /* (1440px <= width) */ (min-width: 1440px) {
+  #Home {
+    grid-template-columns: repeat(6, 1fr);
+    padding: 3.2rem 14.4rem;
+  }
+}
