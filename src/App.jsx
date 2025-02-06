@@ -20,11 +20,11 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
-      <Route path="/doctor/:id" element={<Doctor />} />
+      <Route path="/docteur/:id" element={<Doctor />} />
       <Route path="/mentions-legales" element={<Legal />} />
       <Route path="/rgpd" element={<Policy />} />
       <Route path="/cgu" element={<Cgu />} />
-      <Route path="/error404" element={<Error404 />} />
+      <Route path="/erreur404" element={<Error404 />} />
       <Route path="*" element={<Error404 />} />
     </Routes>
     <Footer />
