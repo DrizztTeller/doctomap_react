@@ -1,0 +1,62 @@
+.doctor-details {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondaryBlue);
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+.doctor-card {
+  background-color: var(--primaryBlue);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+.doctor-image {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doctor-image img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--secondaryBlue);
+}
+
+.doctor-info {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.doctor-info h2 {
+  margin-bottom: 10px;
+}
+
+.speciality {
+  margin-bottom: 15px;
+  color: var(--secondaryGreen);
+}
+
+.doctor-contact p {
+  margin: 8px 0;
+}
+
+.doctor-contact p strong {
+  color: var(--secondaryGreen);
+}
