@@ -11,7 +11,7 @@ const Seo = () => {
   let metaPageOgDescription = "";
   let metakeywords = "";
   switch (path) {
-    case "/home":
+    case "/":
       metaPageTitle = "Acceuil - Doctomap";
       metaPageDescription = "Bienvenue chez Doctomap, l'appli qui vous permet de trouver les docteurs qui vous entourent.";
       metakeywords = "docteurs, localisation, spécialités, adresse";
@@ -36,7 +36,7 @@ const Seo = () => {
       metaPageOgDescription = "Découvrez nos conditions générales d'utilisation";
       break;
   
-    case "/error404":
+    case "/erreur404":
       metaPageTitle = "Page non trouvée";
       metaPageDescription = "La page que vous cherchez n'existe plus.";
       metakeywords = "page non trouvée, inexistance";
