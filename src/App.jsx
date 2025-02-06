@@ -10,6 +10,8 @@ import Error404 from "./Pages/Error404/Error404";
 import Doctor from "./Pages/Doctor/Doctor";
 import Search from "./Pages/Search/Search";
 import Seo from "./Components/Seo/Seo";
+import DoctorEdit from "./Pages/DoctorEdit/DoctorEdit";
+import DoctorAddForm from "./Pages/DoctorAddForm/DoctorAddForm";
 
 function App() {
 
@@ -21,7 +23,9 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
+      <Route path="/docteur/update/:id" element={<DoctorEdit />} />
       <Route path="/docteur/:id" element={<Doctor />} />
+      <Route path="/ajouter" element={<DoctorAddForm />} />
       <Route path="/rechercher" element={<Search />} />
       <Route path="/mentions-legales" element={<Legal />} />
       <Route path="/rgpd" element={<Policy />} />
