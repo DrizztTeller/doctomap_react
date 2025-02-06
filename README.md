@@ -12,4 +12,5 @@ Currently, two official plugins are available:
 Liste étapes : 
 - npm create vite@latest doctomap_react --template react
 - npm i
+- npm i react-router-dom
 - 
