@@ -5,6 +5,7 @@ import Footer from "./Components/Footer/Footer";
 import Home from "./Pages/Home/Home";
 import Legal from "./Pages/Legal/Legal";
 import Policy from "./Pages/Policy/Policy";
+import Cgu from "./Pages/Cgu/Cgu";
 import Error404 from "./Pages/Error404/Error404";
 import Doctor from "./Pages/Doctor/Doctor";
 import Seo from "./Components/Seo/Seo";
@@ -20,8 +21,9 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/doctor/:id" element={<Doctor />} />
-      <Route path="/legal" element={<Legal />} />
-      <Route path="/policy" element={<Policy />} />
+      <Route path="/mentions-legales" element={<Legal />} />
+      <Route path="/rgpd" element={<Policy />} />
+      <Route path="/cgu" element={<Cgu />} />
       <Route path="/error404" element={<Error404 />} />
       <Route path="*" element={<Error404 />} />
     </Routes>
