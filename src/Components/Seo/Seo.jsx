@@ -17,17 +17,23 @@ const Seo = () => {
       metakeywords = "docteurs, localisation, spécialités, adresse";
       metaPageOgDescription = "Découvrer Doctomap, l'appli qui vous facilite la recherche de docteurs";
       break;
-    case "/legal":
+    case "/mentions-legales":
       metaPageTitle = "Mentions Légales de Doctomap";
       metaPageDescription = "Découvrez les informations légales et réglementaires de Doctomap.";
       metakeywords = "mentions légales, légalité, informations juridiques, Doctomap";
       metaPageOgDescription = "Consultez les mentions légales de Doctomap : informations sur la conformité juridique de notre site.";
       break;
-    case "/policy":
+    case "/rgpd":
       metaPageTitle = "Politique RGPD de Doctomap";
       metaPageDescription = "Découvrez notre politique de confidentialité et notre engagement à protéger vos données personnelles conformément au RGPD. Consultez les détails sur la collecte, l'utilisation et la gestion de vos informations.";
       metakeywords = "RGPD, règlement général sur la protection des données, politique de confidentialité, protection des données personnelles, Doctomap";
       metaPageOgDescription = "Chez Doctomap, nous nous engageons à protéger vos données personnelles en respectant les normes du RGPD. Apprenez-en plus sur la gestion et l'utilisation de vos données sur notre site.";
+      break;
+    case "/cgu":
+      metaPageTitle = "Conditions générales d'utilisation de Doctomap";
+      metaPageDescription = "Découvrez nos conditions générales d'utilisation";
+      metakeywords = "CGU, conditions générales d'utilisation, Doctomap";
+      metaPageOgDescription = "Découvrez nos conditions générales d'utilisation";
       break;
   
     case "/error404":
