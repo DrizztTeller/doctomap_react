@@ -15,7 +15,6 @@ const DoctorAddForm = () => {
     phone: "",
     image: "",
   });
-  const [error, setError] = useState(null);
 
   const handleChange = (e) => {
     setDoctor({ ...doctor, [e.target.name]: e.target.value });
@@ -23,7 +22,6 @@ const DoctorAddForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError(null);
 
     try {
       const response = await fetch("https://localhost:8000/api/doctors", {
@@ -50,7 +48,6 @@ const DoctorAddForm = () => {
   return (
     <div className="doctor-form-container">
       <h2>Ajouter un médecin</h2>
-      {error && <p className="error-message">{error}</p>}
       <form onSubmit={handleSubmit} className="doctor-form">
         <input type="text" name="firstname" placeholder="Prénom" value={doctor.firstname} onChange={handleChange} required />
         <input type="text" name="lastname" placeholder="Nom" value={doctor.lastname} onChange={handleChange} required />
