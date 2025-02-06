@@ -1,0 +1,105 @@
+#Footer {
+  width: 100%;
+  background-color: var(--primaryBlue);
+  color: var(--white1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto auto 0;
+
+  .footer__div-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--black0);
+    padding-right: 1rem;
+    padding: 2rem;
+
+    .footer__div__div-links {
+      z-index: 2;
+      display: grid;
+      gap: 1.2rem;
+      place-items: center;
+      .footer__div__div__a {
+        text-align: center;
+        &:hover {
+          color: var(--secondaryGreen);
+        }
+      }
+    }
+
+    .footer__div__figure-img {
+      width: 8rem;
+    }
+
+    .footer__div__a {
+      z-index: 2;
+      width: 12rem;
+      height: 12rem;
+      display: grid;
+      place-items: center;
+    }
+
+    .footer__div__div-banner {
+      display: none;
+      background-color: var(--secondaryBlue);
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc(100% - 21.6rem);
+      z-index: 1;
+      clip-path: polygon(0 0, 100% 0, calc(100% - 142.64px) 100%, 0 100%);
+    }
+  }
+
+  .footer__p {
+    max-width: unset;
+    width: 100%;
+    padding: 1.2rem 0;
+    text-align: center;
+    background-color: var(--black1);
+    color: var(--white1);
+  }
+}
+
+/* media queries pour Tablette */
+@media only screen and /* (850px <= width < 1440px) */ (min-width: 850px) {
+  #Footer {
+    .footer__div-container {
+      padding: 3.2rem;
+
+      .footer__div__figure-img {
+        width: 10rem;
+      }
+    }
+  }
+}
+
+/* Media queries for Desktop */
+@media only screen and /* (1440px <= width) */ (min-width: 1440px) {
+  #Footer {
+    background-color: var(--white1);
+    color: var(--white1);
+    .footer__div-container {
+      padding: 4rem 6.4rem;
+
+      .footer__div__div-links {
+   
+        .footer__div__div__a {
+     
+          &:hover {
+            color: var(--secondaryGreen);
+          }
+        }
+      }
+
+      .footer__div__div-banner {
+        display: unset;
+      }
+    }
+  }
+}
