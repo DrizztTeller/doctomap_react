@@ -8,6 +8,7 @@ import Policy from "./Pages/Policy/Policy";
 import Cgu from "./Pages/Cgu/Cgu";
 import Error404 from "./Pages/Error404/Error404";
 import Doctor from "./Pages/Doctor/Doctor";
+import Search from "./Pages/Search/Search";
 import Seo from "./Components/Seo/Seo";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/docteur/:id" element={<Doctor />} />
+      <Route path="/rechercher" element={<Search />} />
       <Route path="/mentions-legales" element={<Legal />} />
       <Route path="/rgpd" element={<Policy />} />
       <Route path="/cgu" element={<Cgu />} />
