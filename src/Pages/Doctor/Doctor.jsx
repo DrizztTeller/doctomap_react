@@ -1,5 +1,5 @@
 import './Doctor.css';
-import { useParams, NavLink } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 import DeleteBtn from '../../Components/DeleteBtn/DeleteBtn';
@@ -51,13 +51,13 @@ const Doctor = () => {
             <p><strong>Téléphone:</strong> {doctor.phone}</p>
           </div>
         </div>
-        <NavLink
+        <Link
           to={`/docteur/update/${doctor.id}`}
           aria-label={`Aller à la page pour modifier les informations d'un docteur`}
           className="update"
         >
           Modifier
-        </NavLink>
+        </Link>
 
         <DeleteBtn doctorId={doctor.id} />
       </div>
